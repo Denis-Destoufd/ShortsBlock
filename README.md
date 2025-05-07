@@ -63,6 +63,4 @@ BlockShortsExtension/
 
 ---
 
-## ✒️ Author
 
-Denis-Destoufd
