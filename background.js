@@ -1,0 +1,1 @@
+// future use — service worker

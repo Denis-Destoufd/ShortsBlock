@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-024-19191-5?utm_source"
+        }
+      },
+      "condition": {
+        "urlFilter": "||youtube.com/shorts/",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 2,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-024-19191-5?utm_source"
+        }
+      },
+      "condition": {
+        "urlFilter": "||tiktok.com/",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 3,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-024-19191-5?utm_source"
+        }
+      },
+      "condition": {
+        "urlFilter": "||vk.com/*clip*",
+        "resourceTypes": ["main_frame"]
+      }
+    }
+  ]
+  

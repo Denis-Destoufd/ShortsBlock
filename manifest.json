@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Block Shorts, TikTok & VK Clips",
+  "version": "1.4",
+  "description": "Блокирует доступ к YouTube Shorts, TikTok и VK Clips, перенаправляя на статью о вреде коротких видео.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.tiktok.com/*",
+    "*://*.vk.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Shorts, TikTok & VK Clips Blocker"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "block_shorts_and_tiktok_and_vk_clips",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.tiktok.com/*",
+        "*://*.vk.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
